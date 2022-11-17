@@ -1,11 +1,10 @@
 from pathlib import Path
+
 import datetime as dt
 
-BASE_DIR = Path(__file__).parents[2]
-RESULTS_DIR = BASE_DIR / 'results'
 
+BASE_DIR = Path(__file__).parents[1]
 DATETIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
-TIME_NOW = dt.datetime.now().strftime(DATETIME_FORMAT)
-
-PEP_NAME = f'status_summary_{TIME_NOW}.csv'
-FILE_PATH = RESULTS_DIR / PEP_NAME
+RESULT_DIR = BASE_DIR / 'results'
+now_format = dt.datetime.now().strftime(DATETIME_FORMAT)
+FILENAME = f'status_summary_{now_format}.csv'

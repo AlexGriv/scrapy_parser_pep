@@ -20,11 +20,10 @@ python -m pip install -U pip
 pip install -r requirements.txt
 scrapy crawl pep
 
-Например:
-
 
 ## Встроенные парсеры
 *pep*
 
 ## Автор
-Гривцов А.С.
+AlexGriv
+https://github.com/AlexGriv
