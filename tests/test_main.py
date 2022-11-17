@@ -14,7 +14,6 @@ except ModuleNotFoundError:
     )
 
 
-@pytest.mark.skip()
 def test_run_scrapy(monkeypatch, tmp_path):
     mock_base_dir = Path(os.path.relpath(tmp_path))
     monkeypatch.setattr(pipelines, 'BASE_DIR', mock_base_dir)
