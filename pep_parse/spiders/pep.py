@@ -1,5 +1,3 @@
-from re import search
-
 import scrapy
 
 from pep_parse.items import PepParseItem
