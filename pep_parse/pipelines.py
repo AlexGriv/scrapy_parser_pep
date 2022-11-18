@@ -2,14 +2,15 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-from pep_parse.constants import FILENAME, RESULT_DIR
+from constants import FILENAME
 
 BASE_DIR = Path(__file__).parents[1]
 
 
+
 class PepParsePipeline:
     def __init__(self):
-        self.result_dir = RESULT_DIR
+        self.result_dir = BASE_DIR / 'results'
         self.result_dir.mkdir(exist_ok=True)
 
     def open_spider(self, spider):
