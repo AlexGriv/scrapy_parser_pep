@@ -7,7 +7,6 @@ from constants import FILENAME
 BASE_DIR = Path(__file__).parents[1]
 
 
-
 class PepParsePipeline:
     def __init__(self):
         self.result_dir = BASE_DIR / 'results'
